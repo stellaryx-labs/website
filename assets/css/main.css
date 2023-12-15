@@ -17,6 +17,11 @@
   --font-secondary: "Poppins", sans-serif;
 }
 
+@font-face {
+    font-family: 'atmospheric';
+    src: url(../fonts/aAtmospheric.ttf) format("truetype")
+}
+
 /* Colors */
 :root {
   --color-default: #0a0d13;
@@ -54,7 +59,12 @@
     position: relative;
     padding-top: 40px;
     padding-bottom: 88px;
-    z-index: 0
+    z-index: 0;
+}
+
+.hero .hero-title {
+    font-family: 'atmospheric', sans-serif;
+    margin-top: 20px !important;
 }
 
 .hero .hero-bg {
