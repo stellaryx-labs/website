@@ -34,26 +34,6 @@
   scroll-behavior: smooth;
 }
 
-.hero .button {
-    display: inline-flex;
-    font-size: 14px;
-    letter-spacing: 0px;
-    font-weight: 700;
-    line-height: 16px;
-    text-decoration: none !important;
-    text-transform: uppercase;
-    background-color: #fff;
-    background: #fff;
-    color: #4234F8 !important;
-    border: none;
-    border-radius: 2px;
-    cursor: pointer;
-    justify-content: center;
-    padding: 16px 40px;
-    height: 48px;
-    text-align: center;
-    white-space: nowrap
-}
 
 .hero {
     position: relative;
@@ -959,11 +939,17 @@ section {
   overflow: hidden;
   margin-bottom: 15px;
   border-radius: 0;
+  background-color: rgb(19, 0, 255);
 }
 
 .services .card .card-img img {
   transition: 0.3s ease-in-out;
+  height: 200px;
+  width: 100%;
+  opacity: 80%;
+  object-fit: cover;
 }
+
 
 .services .card h3 {
   font-weight: 700;
@@ -997,7 +983,7 @@ section {
 # Call To Action Section
 --------------------------------------------------------------*/
 .call-to-action {
-  background: linear-gradient(rgba(14, 29, 52, 0.6), rgba(14, 29, 52, 0.8)), url("../img/cta-bg.jpg") center center;
+  background: linear-gradient(rgba(14, 29, 52, 0.6), rgba(14, 29, 52, 0.8)), url("../img/asset_3.jpeg") center center;
   background-size: cover;
   padding: 100px 0;
 }

@@ -1,6 +1,26 @@
-Thanks for downloading this template!
+Consulting
+- resume looking
+- project feedback
+- software design and architecture
 
-Template Name: Logis
-Template URL: https://bootstrapmade.com/logis-bootstrap-logistics-website-template/
-Author: BootstrapMade.com
-License: https://bootstrapmade.com/license/
+
+Education
+- educational tools
+- workshops
+- educational resources on GumRoad 
+
+Instruction
+- live and in-person workshops
+
+Get a Quote:
+- select type of service
+- name and credentials
+- description of job
+- make a typeform
+
+Courses:
+- JPL: Writing Effective Space Code
+
+Content Creation:
+
+Development:
