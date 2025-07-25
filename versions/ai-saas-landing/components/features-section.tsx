@@ -71,7 +71,7 @@ export default function FeaturesSection() {
   ]
 
   return (
-    <section className="py-20 bg-muted/50 dark:bg-muted/10" id="services" aria-labelledby="services-heading">
+    <section className="py-20 bg-muted/50 dark:bg-muted/10" id="services" aria-labelledby="services">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
           <div className="space-y-2">

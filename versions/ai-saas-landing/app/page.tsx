@@ -8,6 +8,7 @@ import FramerSpotlight from "@/components/framer-spotlight"
 import CssGridBackground from "@/components/css-grid-background"
 import FeaturesSection from "@/components/features-section"
 import StructuredData from "@/components/structured-data"
+import Link from "next/link"
 
 export default function Home() {
   return (
@@ -41,9 +42,11 @@ export default function Home() {
               </p>
 
               <div className="flex flex-wrap justify-center gap-3 mb-20">
+                <Link href="#about">
                 <Button className="px-5 py-6 h-[60px] border-2 border-gray-300 dark:border-gray-600 bg-transparent hover:bg-gray-100 dark:hover:bg-gray-800 text-[15px] font-medium text-foreground">
                   LEARN MORE
                 </Button>
+                </Link>
               </div>
             </div>
           </div>

@@ -9,10 +9,10 @@ import { Menu, Zap } from "lucide-react"
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
 
-  const navItems = [
-    { label: "Features", href: "#features" },
-    { label: "Use Cases", href: "#use-cases" },
-    { label: "Testimonials", href: "#testimonials" },
+    const navItems = [
+    { label: "About", href: "#about" },
+    { label: "Services", href: "#services" },
+    { label: "Research", href: "#research" },
     { label: "Contact", href: "#contact" },
   ]
 
@@ -21,6 +21,11 @@ export default function Navbar() {
       <div className="container flex h-16 items-center justify-between">
         <div className="flex items-center gap-2">
           <Link href="/" className="flex items-center space-x-2" aria-label="Stellaryx Labs Homepage">
+            <img 
+              src="/stellaryxlabslogo_invert.png" 
+              alt="Stellaryx Labs Logo" 
+              className="h-8 w-8"
+            />
             <span className="text-2xl font-bold">Stellaryx Labs</span>
           </Link>
         </div>

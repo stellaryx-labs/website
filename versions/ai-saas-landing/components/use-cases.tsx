@@ -86,7 +86,7 @@ export default function UseCases() {
   return (
     <section
       className="py-20 bg-gradient-to-b from-background to-muted/30 dark:from-background dark:to-muted/10"
-      id="research"
+      id="services"
     >
       <div className="container px-4 md:px-6">
         <motion.div
