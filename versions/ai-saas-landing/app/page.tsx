@@ -1,7 +1,6 @@
 import { Button } from "@/components/ui/button"
-import { Bot, Database, Shield, Users, Zap } from "lucide-react"
+import { Satellite, Radio, Brain, Radar, Zap, Telescope } from "lucide-react"
 import ContactForm from "@/components/contact-form"
-import Testimonials from "@/components/testimonials"
 import UseCases from "@/components/use-cases"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
@@ -50,49 +49,84 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Features Section */}
-        <FeaturesSection />
-
-        {/* How It Works */}
-        <section className="py-20" id="how-it-works" aria-labelledby="how-it-works-heading">
+        {/* Mission Section */}
+        <section className="py-20" id="about" aria-labelledby="about-heading">
           <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
-              <div className="space-y-2">
-                <h2 id="how-it-works-heading" className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                  How It Works
-                </h2>
-                <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
-                  Our platform seamlessly integrates with your existing workflows and systems.
-                </p>
-              </div>
-            </div>
-            <div className="grid gap-6 lg:grid-cols-3 lg:gap-12 items-start">
-              <div className="flex flex-col items-center space-y-4 text-center">
-                <div className="flex h-16 w-16 items-center justify-center rounded-full bg-primary text-primary-foreground">
-                  <span className="text-2xl font-bold">1</span>
+            <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
+              <div className="flex flex-col justify-center space-y-4">
+                <div className="space-y-2">
+                  <div className="inline-block rounded-lg bg-primary px-3 py-1 text-sm text-primary-foreground mb-2">
+                    Our Mission
+                  </div>
+                  <h2 id="about-heading" className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+                    Technical Rigor Meets Strategic Foresight
+                  </h2>
+                  <p className="text-muted-foreground md:text-xl">
+                    Stellaryx Labs is an experimental R&D initiative at the intersection of aerospace education, signals
+                    intelligence, and AI-driven geospatial analysis. Our mission is to democratize access to orbital
+                    intelligence by developing hands-on workshops, building tactical signal processing tools, and
+                    applying cutting-edge machine learning to satellite imagery and remote sensing data.
+                  </p>
                 </div>
-                <h3 className="text-xl font-bold">Connect Your Data</h3>
-                <p className="text-muted-foreground">
-                  Securely connect your organization's knowledge base, documents, and data sources.
-                </p>
-              </div>
-              <div className="flex flex-col items-center space-y-4 text-center">
-                <div className="flex h-16 w-16 items-center justify-center rounded-full bg-primary text-primary-foreground">
-                  <span className="text-2xl font-bold">2</span>
+                <div className="space-y-4">
+                  <div className="flex items-start gap-3">
+                    <div className="flex items-center justify-center w-8 h-8 rounded-lg bg-primary/10 text-primary">
+                      <Satellite className="h-4 w-4" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold">Orbital Intelligence Platform</h3>
+                      <p className="text-sm text-muted-foreground">
+                        Democratizing access to space-based intelligence through open-source tools and methodologies for
+                        satellite data analysis and orbital monitoring.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="flex items-center justify-center w-8 h-8 rounded-lg bg-primary/10 text-primary">
+                      <Radio className="h-4 w-4" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold">Signals Intelligence & RF Processing</h3>
+                      <p className="text-sm text-muted-foreground">
+                        Advanced signal processing capabilities for RF analysis, from demodulating raw RF to tactical
+                        communications processing and satellite monitoring.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="flex items-center justify-center w-8 h-8 rounded-lg bg-primary/10 text-primary">
+                      <Brain className="h-4 w-4" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold">AI-Driven Geospatial Analysis</h3>
+                      <p className="text-sm text-muted-foreground">
+                        Cutting-edge machine learning applications for satellite imagery and remote sensing data,
+                        enabling automated intelligence extraction from orbital assets.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <div className="flex items-center justify-center w-8 h-8 rounded-lg bg-primary/10 text-primary">
+                      <Telescope className="h-4 w-4" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold">Space Systems Engineering Education</h3>
+                      <p className="text-sm text-muted-foreground">
+                        Training the next generation of space systems engineers while laying the groundwork for
+                        autonomous, secure, space-based intelligence architectures.
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                <h3 className="text-xl font-bold">Configure Your AI</h3>
-                <p className="text-muted-foreground">
-                  Choose LLMs, set up agents, and customize prompt templates to match your needs.
-                </p>
               </div>
-              <div className="flex flex-col items-center space-y-4 text-center">
-                <div className="flex h-16 w-16 items-center justify-center rounded-full bg-primary text-primary-foreground">
-                  <span className="text-2xl font-bold">3</span>
-                </div>
-                <h3 className="text-xl font-bold">Deploy & Scale</h3>
-                <p className="text-muted-foreground">
-                  Roll out to your organization with enterprise-grade security and scale as needed.
-                </p>
+              <div className="mx-auto aspect-video overflow-hidden rounded-xl object-cover sm:w-full lg:order-last lg:aspect-square">
+                <img
+                  alt="Orbital Intelligence Research"
+                  className="mx-auto aspect-video overflow-hidden rounded-xl object-cover sm:w-full lg:order-last lg:aspect-square"
+                  height="550"
+                  src="/placeholder.svg?height=550&width=550"
+                  width="550"
+                />
               </div>
             </div>
           </div>
@@ -101,44 +135,43 @@ export default function Home() {
         {/* Use Cases */}
         <UseCases />
 
-        {/* Testimonials */}
-        <Testimonials />
-
-        {/* Contact/Pricing Section */}
+        {/* Contact/Research Collaboration Section */}
         <section id="contact" className="py-20 bg-muted/50 dark:bg-muted/10" aria-labelledby="contact-heading">
           <div className="container px-4 md:px-6">
             <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-start">
               <div className="flex flex-col justify-center space-y-4">
                 <div className="space-y-2">
                   <h2 id="contact-heading" className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                    Custom Enterprise Pricing
+                    Join Our Research Initiative
                   </h2>
                   <p className="text-muted-foreground md:text-xl">
-                    We offer tailored pricing packages for enterprises and government agencies based on your specific
-                    needs and scale.
+                    Collaborate with us on experimental R&D projects at the intersection of aerospace education, signals
+                    intelligence, and AI-driven geospatial analysis. Let's push the boundaries of orbital intelligence
+                    together.
                   </p>
                 </div>
                 <div className="space-y-4">
                   <div className="flex items-center gap-2">
-                    <Users className="h-5 w-5 text-primary" />
-                    <span>Unlimited users with role-based access control</span>
+                    <Satellite className="h-5 w-5 text-primary" />
+                    <span>Hands-on workshops in orbital intelligence</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <Database className="h-5 w-5 text-primary" />
-                    <span>Customizable knowledge base size</span>
+                    <Radio className="h-5 w-5 text-primary" />
+                    <span>Tactical signal processing tools development</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <Bot className="h-5 w-5 text-primary" />
-                    <span>Access to all LLM models</span>
+                    <Brain className="h-5 w-5 text-primary" />
+                    <span>AI/ML for satellite imagery analysis</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <Shield className="h-5 w-5 text-primary" />
-                    <span>Enterprise-grade security and compliance</span>
+                    <Radar className="h-5 w-5 text-primary" />
+                    <span>Secure space-based intelligence architectures</span>
                   </div>
                 </div>
                 <div className="pt-4">
                   <p className="font-medium">
-                    Contact us for a personalized quote and to discuss your specific requirements.
+                    Contact us to discuss research collaboration opportunities, workshop participation, or to learn more
+                    about our experimental R&D initiatives in space systems engineering.
                   </p>
                 </div>
               </div>

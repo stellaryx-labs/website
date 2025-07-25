@@ -16,43 +16,44 @@ export default function UseCases() {
   const useCases = [
     {
       icon: <BuildingIcon />,
-      title: "Enterprise Knowledge Management",
+      title: "Space Systems Engineering",
       description:
-        "Centralize organizational knowledge and enable AI-powered search and retrieval across all your data sources.",
+        "Training the next generation of engineers in orbital mechanics, satellite design, and space-based intelligence systems through hands-on workshops and practical applications.",
       accentColor: "rgba(59, 130, 246, 0.5)",
     },
     {
       icon: <GovernmentIcon />,
-      title: "Government Operations",
+      title: "Defense & Intelligence",
       description:
-        "Streamline processes, enhance citizen services, and improve decision-making with secure AI solutions.",
+        "Developing secure, autonomous space-based intelligence architectures for defense applications while maintaining open-source innovation principles.",
       accentColor: "rgba(139, 92, 246, 0.5)",
     },
     {
       icon: <FinanceIcon />,
-      title: "Financial Services",
+      title: "Satellite Data Analytics",
       description:
-        "Enhance compliance, risk assessment, and customer service with AI that respects strict data security requirements.",
+        "AI-driven analysis of satellite imagery and remote sensing data for commercial applications, environmental monitoring, and geospatial intelligence.",
       accentColor: "rgba(245, 158, 11, 0.5)",
     },
     {
       icon: <HealthcareIcon />,
-      title: "Healthcare",
+      title: "Research Institutions",
       description:
-        "Improve patient care and operational efficiency while maintaining HIPAA compliance and data privacy.",
+        "Collaborative research in orbital intelligence, signal processing, and machine learning applications for academic and scientific communities.",
       accentColor: "rgba(239, 68, 68, 0.5)",
     },
     {
       icon: <LegalIcon />,
-      title: "Legal",
+      title: "RF Signal Analysis",
       description:
-        "Accelerate legal research, contract analysis, and case preparation with secure, accurate AI assistance.",
+        "Advanced signal processing and demodulation techniques for tactical communications, satellite monitoring, and signals intelligence applications.",
       accentColor: "rgba(132, 204, 22, 0.5)",
     },
     {
       icon: <EducationIcon />,
-      title: "Education",
-      description: "Transform learning experiences and administrative processes with customizable AI solutions.",
+      title: "Aerospace Education",
+      description:
+        "Democratizing access to orbital intelligence through educational programs that bridge theoretical knowledge with practical space systems engineering.",
       accentColor: "rgba(14, 165, 233, 0.5)",
     },
   ]
@@ -83,7 +84,10 @@ export default function UseCases() {
   }
 
   return (
-    <section className="py-20 bg-gradient-to-b from-background to-muted/30 dark:from-background dark:to-muted/10">
+    <section
+      className="py-20 bg-gradient-to-b from-background to-muted/30 dark:from-background dark:to-muted/10"
+      id="research"
+    >
       <div className="container px-4 md:px-6">
         <motion.div
           className="flex flex-col items-center justify-center space-y-4 text-center mb-12"
@@ -94,11 +98,14 @@ export default function UseCases() {
         >
           <div className="space-y-2">
             <div className="inline-block rounded-lg bg-primary px-3 py-1 text-sm text-primary-foreground mb-2">
-              Use Cases
+              Research Applications
             </div>
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Transforming Industries</h2>
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+              From RF to Planetary Systems
+            </h2>
             <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
-              Our AI platform is designed to meet the unique challenges of various sectors.
+              Our experimental R&D spans from demodulating raw RF signals to decoding complex planetary systems,
+              bridging technical rigor with strategic foresight.
             </p>
           </div>
         </motion.div>

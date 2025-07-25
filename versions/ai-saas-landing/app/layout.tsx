@@ -1,46 +1,46 @@
 import type React from "react"
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
-import { Tomorrow } from "next/font/google"
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 
 const inter = Inter({ subsets: ["latin"] })
-const tomorrow = Tomorrow({ subsets: ["latin"], weight: "500"})
 
 export const metadata: Metadata = {
-  title: "Enterprise AI Platform | Secure AI Solutions for Business & Government",
+  title:
+    "Stellaryx Labs | Experimental R&D in Orbital Intelligence, Signals Intelligence & AI-Driven Geospatial Analysis",
   description:
-    "Enterprise-grade AI platform with LLM conversations, customizable agents, secure knowledge base, and MCP server support for businesses and government agencies.",
-  keywords: "enterprise AI, secure AI, government AI solutions, LLM, knowledge base, AI agents, MCP server",
+    "Experimental R&D initiative at the intersection of aerospace education, signals intelligence, and AI-driven geospatial analysis. Democratizing access to orbital intelligence through hands-on workshops, tactical signal processing tools, and cutting-edge machine learning applications.",
+  keywords:
+    "orbital intelligence, signals intelligence, SIGINT, geospatial AI, satellite imagery, RF signal processing, space systems engineering, aerospace education, defense innovation, machine learning, remote sensing",
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://your-domain.com",
-    title: "Enterprise AI Platform | Secure AI Solutions",
+    url: "https://stellaryxlabs.com",
+    title: "Stellaryx Labs | Orbital Intelligence & Space Systems R&D",
     description:
-      "Enterprise-grade AI platform with advanced security, customization, and control for businesses and government agencies.",
-    siteName: "Enterprise AI Platform",
+      "Experimental R&D initiative democratizing access to orbital intelligence through AI-driven geospatial analysis, signals intelligence, and aerospace education.",
+    siteName: "Stellaryx Labs",
     images: [
       {
-        url: "https://your-domain.com/og-image.jpg",
+        url: "https://stellaryxlabs.com/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Enterprise AI Platform",
+        alt: "Stellaryx Labs - Orbital Intelligence Research",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Enterprise AI Platform | Secure AI Solutions",
-    description: "Enterprise-grade AI platform with advanced security, customization, and control.",
-    images: ["https://your-domain.com/twitter-image.jpg"],
+    title: "Stellaryx Labs | Orbital Intelligence & Space Systems R&D",
+    description:
+      "Experimental R&D initiative at the intersection of aerospace education, signals intelligence, and AI-driven geospatial analysis.",
+    images: ["https://stellaryxlabs.com/twitter-image.jpg"],
   },
   robots: {
     index: true,
     follow: true,
   },
-    generator: 'v0.dev'
 }
 
 export default function RootLayout({
@@ -50,7 +50,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${inter.className} ${tomorrow.className}`}>
+      <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           {children}
         </ThemeProvider>

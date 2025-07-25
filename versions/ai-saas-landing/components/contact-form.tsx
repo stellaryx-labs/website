@@ -33,8 +33,8 @@ export default function ContactForm() {
           <CheckCircle2 className="h-16 w-16 text-primary mb-4" />
           <h3 className="text-2xl font-bold mb-2">Thank You!</h3>
           <p className="text-muted-foreground mb-6">
-            Your inquiry has been received. Our enterprise team will contact you shortly to discuss your specific
-            requirements.
+            Your research collaboration inquiry has been received. Our R&D team will contact you shortly to discuss
+            potential opportunities and experimental initiatives.
           </p>
           <Button onClick={() => setIsSubmitted(false)}>Submit Another Inquiry</Button>
         </CardContent>
@@ -45,9 +45,10 @@ export default function ContactForm() {
   return (
     <Card>
       <CardHeader>
-        <CardTitle>Contact Our Enterprise Team</CardTitle>
+        <CardTitle>Research Collaboration Inquiry</CardTitle>
         <CardDescription>
-          Fill out the form below to discuss your organization's needs and receive a custom quote.
+          Fill out the form below to discuss research collaboration opportunities, workshop participation, or learn more
+          about our experimental R&D initiatives.
         </CardDescription>
       </CardHeader>
       <CardContent>
@@ -63,42 +64,48 @@ export default function ContactForm() {
             </div>
           </div>
           <div className="space-y-2">
-            <Label htmlFor="email">Work Email</Label>
-            <Input id="email" type="email" placeholder="john.doe@company.com" required />
+            <Label htmlFor="email">Email</Label>
+            <Input id="email" type="email" placeholder="john.doe@research.org" required />
           </div>
           <div className="space-y-2">
-            <Label htmlFor="company">Company/Organization</Label>
-            <Input id="company" placeholder="Acme Inc." required />
+            <Label htmlFor="organization">Organization/Institution</Label>
+            <Input id="organization" placeholder="Research Institute, Defense Lab, University" required />
           </div>
           <div className="space-y-2">
             <Label htmlFor="role">Your Role</Label>
-            <Input id="role" placeholder="CTO, IT Director, etc." required />
+            <Input id="role" placeholder="Researcher, Engineer, Professor, etc." required />
           </div>
           <div className="space-y-2">
-            <Label htmlFor="size">Organization Size</Label>
+            <Label htmlFor="interest">Research Interest Area</Label>
             <Select>
-              <SelectTrigger id="size">
-                <SelectValue placeholder="Select organization size" />
+              <SelectTrigger id="interest">
+                <SelectValue placeholder="Select your primary interest" />
               </SelectTrigger>
               <SelectContent>
-                <SelectItem value="1-50">1-50 employees</SelectItem>
-                <SelectItem value="51-200">51-200 employees</SelectItem>
-                <SelectItem value="201-500">201-500 employees</SelectItem>
-                <SelectItem value="501-1000">501-1000 employees</SelectItem>
-                <SelectItem value="1001+">1001+ employees</SelectItem>
-                <SelectItem value="government">Government Agency</SelectItem>
+                <SelectItem value="orbital-intelligence">Orbital Intelligence</SelectItem>
+                <SelectItem value="signals-intelligence">Signals Intelligence (SIGINT)</SelectItem>
+                <SelectItem value="geospatial-ai">AI-Driven Geospatial Analysis</SelectItem>
+                <SelectItem value="rf-processing">RF Signal Processing</SelectItem>
+                <SelectItem value="space-systems">Space Systems Engineering</SelectItem>
+                <SelectItem value="defense-innovation">Defense Innovation</SelectItem>
+                <SelectItem value="workshops">Hands-On Workshops</SelectItem>
+                <SelectItem value="collaboration">Research Collaboration</SelectItem>
               </SelectContent>
             </Select>
           </div>
           <div className="space-y-2">
-            <Label htmlFor="message">How can we help?</Label>
-            <Textarea id="message" placeholder="Tell us about your specific requirements and use cases..." rows={4} />
+            <Label htmlFor="message">Research Interests & Collaboration Goals</Label>
+            <Textarea
+              id="message"
+              placeholder="Tell us about your research interests, potential collaboration goals, or specific areas where you'd like to work with our R&D team..."
+              rows={4}
+            />
           </div>
           <Button type="submit" className="w-full" disabled={isSubmitting}>
-            {isSubmitting ? "Submitting..." : "Request Information"}
+            {isSubmitting ? "Submitting..." : "Submit Research Inquiry"}
           </Button>
           <p className="text-xs text-muted-foreground text-center">
-            By submitting this form, you agree to our privacy policy and terms of service.
+            By submitting this form, you agree to our privacy policy and research collaboration terms.
           </p>
         </form>
       </CardContent>

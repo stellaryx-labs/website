@@ -1,4 +1,5 @@
 import Link from "next/link"
+import { Rocket } from "lucide-react"
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
@@ -8,33 +9,39 @@ export default function Footer() {
       <div className="container px-4 md:px-6">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="space-y-4">
-            <h3 className="text-lg font-bold">AI Enterprise</h3>
+            <div className="flex items-center gap-2">
+              <div className="flex items-center justify-center w-8 h-8 rounded-lg bg-primary text-primary-foreground">
+                <Rocket className="h-5 w-5" />
+              </div>
+              <h3 className="text-lg font-bold">Stellaryx Labs</h3>
+            </div>
             <p className="text-sm text-muted-foreground">
-              Enterprise-grade AI solutions for organizations that demand security, customization, and control.
+              Experimental R&D initiative at the intersection of aerospace education, signals intelligence, and
+              AI-driven geospatial analysis.
             </p>
           </div>
           <div className="space-y-4">
-            <h3 className="text-sm font-bold">Product</h3>
-            <nav aria-label="Product Navigation">
+            <h3 className="text-sm font-bold">Research Areas</h3>
+            <nav aria-label="Research Navigation">
               <ul className="space-y-2 text-sm">
                 <li>
-                  <Link href="#features" className="text-muted-foreground hover:text-foreground">
-                    Features
+                  <Link href="#services" className="text-muted-foreground hover:text-foreground">
+                    Orbital Intelligence
                   </Link>
                 </li>
                 <li>
-                  <Link href="#security" className="text-muted-foreground hover:text-foreground">
-                    Security
+                  <Link href="#services" className="text-muted-foreground hover:text-foreground">
+                    Signals Intelligence
                   </Link>
                 </li>
                 <li>
-                  <Link href="#enterprise" className="text-muted-foreground hover:text-foreground">
-                    Enterprise
+                  <Link href="#services" className="text-muted-foreground hover:text-foreground">
+                    Geospatial AI/ML
                   </Link>
                 </li>
                 <li>
-                  <Link href="#government" className="text-muted-foreground hover:text-foreground">
-                    Government
+                  <Link href="#services" className="text-muted-foreground hover:text-foreground">
+                    RF Signal Processing
                   </Link>
                 </li>
               </ul>
@@ -45,45 +52,45 @@ export default function Footer() {
             <nav aria-label="Resources Navigation">
               <ul className="space-y-2 text-sm">
                 <li>
-                  <Link href="/documentation" className="text-muted-foreground hover:text-foreground">
-                    Documentation
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/case-studies" className="text-muted-foreground hover:text-foreground">
-                    Case Studies
-                  </Link>
-                </li>
-                <li>
                   <Link href="/blog" className="text-muted-foreground hover:text-foreground">
-                    Blog
+                    Research Blog
                   </Link>
                 </li>
                 <li>
-                  <Link href="/support" className="text-muted-foreground hover:text-foreground">
-                    Support
+                  <Link href="#research" className="text-muted-foreground hover:text-foreground">
+                    Publications
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#services" className="text-muted-foreground hover:text-foreground">
+                    Workshops
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#contact" className="text-muted-foreground hover:text-foreground">
+                    Collaboration
                   </Link>
                 </li>
               </ul>
             </nav>
           </div>
           <div className="space-y-4">
-            <h3 className="text-sm font-bold">Company</h3>
-            <nav aria-label="Company Navigation">
+            <h3 className="text-sm font-bold">Connect</h3>
+            <nav aria-label="Connect Navigation">
               <ul className="space-y-2 text-sm">
                 <li>
-                  <Link href="/about" className="text-muted-foreground hover:text-foreground">
-                    About
+                  <Link href="#about" className="text-muted-foreground hover:text-foreground">
+                    About Our Mission
                   </Link>
                 </li>
                 <li>
-                  <Link href="/careers" className="text-muted-foreground hover:text-foreground">
-                    Careers
+                  <Link href="#contact" className="text-muted-foreground hover:text-foreground">
+                    Research Inquiry
                   </Link>
                 </li>
                 <li>
-                  <Link href="/contact" className="text-muted-foreground hover:text-foreground">
-                    Contact
+                  <Link href="#contact" className="text-muted-foreground hover:text-foreground">
+                    Join Initiative
                   </Link>
                 </li>
                 <li>
@@ -96,12 +103,13 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-12 pt-8 border-t flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-sm text-muted-foreground">© {currentYear} AI Enterprise. All rights reserved.</p>
+          <p className="text-sm text-muted-foreground">© {currentYear} Stellaryx Labs. All rights reserved.</p>
           <div className="flex gap-4">
             <Link
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/company/stellaryx-labs"
               className="text-muted-foreground hover:text-foreground"
               aria-label="LinkedIn"
+              target="_blank"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -121,9 +129,10 @@ export default function Footer() {
               </svg>
             </Link>
             <Link
-              href="https://twitter.com"
+              href="https://twitter.com/StellaryxLabs"
               className="text-muted-foreground hover:text-foreground"
               aria-label="Twitter"
+              target="_blank"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -140,7 +149,7 @@ export default function Footer() {
                 <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
               </svg>
             </Link>
-            <Link href="https://github.com" className="text-muted-foreground hover:text-foreground" aria-label="GitHub">
+            <Link href="#" className="text-muted-foreground hover:text-foreground" aria-label="GitHub">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
