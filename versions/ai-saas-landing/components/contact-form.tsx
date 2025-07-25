@@ -45,11 +45,7 @@ export default function ContactForm() {
   return (
     <Card>
       <CardHeader>
-        <CardTitle>Research Collaboration Inquiry</CardTitle>
-        <CardDescription>
-          Fill out the form below to discuss research collaboration opportunities, workshop participation, or learn more
-          about our experimental R&D initiatives.
-        </CardDescription>
+        <CardTitle>Contact Form</CardTitle>
       </CardHeader>
       <CardContent>
         <form onSubmit={handleSubmit} className="space-y-4">
@@ -68,8 +64,8 @@ export default function ContactForm() {
             <Input id="email" type="email" placeholder="john.doe@research.org" required />
           </div>
           <div className="space-y-2">
-            <Label htmlFor="organization">Organization/Institution</Label>
-            <Input id="organization" placeholder="Research Institute, Defense Lab, University" required />
+            <Label htmlFor="organization">Organization / Institution</Label>
+            <Input id="organization" placeholder="Company, University, etc." required />
           </div>
           <div className="space-y-2">
             <Label htmlFor="role">Your Role</Label>
@@ -102,11 +98,8 @@ export default function ContactForm() {
             />
           </div>
           <Button type="submit" className="w-full" disabled={isSubmitting}>
-            {isSubmitting ? "Submitting..." : "Submit Research Inquiry"}
+            {isSubmitting ? "Submitting..." : "Submit Form"}
           </Button>
-          <p className="text-xs text-muted-foreground text-center">
-            By submitting this form, you agree to our privacy policy and research collaboration terms.
-          </p>
         </form>
       </CardContent>
     </Card>

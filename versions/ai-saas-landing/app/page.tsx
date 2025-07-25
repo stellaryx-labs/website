@@ -142,9 +142,8 @@ export default function Home() {
                     Join Our Research Initiative
                   </h2>
                   <p className="text-muted-foreground md:text-xl">
-                    Collaborate with us on experimental R&D projects at the intersection of aerospace education, signals
-                    intelligence, and AI-driven geospatial analysis. Let's push the boundaries of orbital intelligence
-                    together.
+                    Contact us to discuss research collaboration opportunities, workshop participation, or to learn more
+                    about our experimental R&D initiatives in space systems engineering.
                   </p>
                 </div>
                 <div className="space-y-4">
@@ -165,12 +164,7 @@ export default function Home() {
                     <span>Secure space-based intelligence architectures</span>
                   </div>
                 </div>
-                <div className="pt-4">
-                  <p className="font-medium">
-                    Contact us to discuss research collaboration opportunities, workshop participation, or to learn more
-                    about our experimental R&D initiatives in space systems engineering.
-                  </p>
-                </div>
+ 
               </div>
               <div className="lg:ml-10">
                 <ContactForm />

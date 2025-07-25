@@ -97,15 +97,11 @@ export default function UseCases() {
           transition={{ duration: 0.6 }}
         >
           <div className="space-y-2">
-            <div className="inline-block rounded-lg bg-primary px-3 py-1 text-sm text-primary-foreground mb-2">
-              Research Applications
-            </div>
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-              From RF to Planetary Systems
+              Orbital Intelligence & Space Systems R&D
             </h2>
             <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl">
-              Our experimental R&D spans from demodulating raw RF signals to decoding complex planetary systems,
-              bridging technical rigor with strategic foresight.
+              Experimental research and development at the intersection of aerospace education, signals intelligence, and AI-driven geospatial analysis.
             </p>
           </div>
         </motion.div>
