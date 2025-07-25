@@ -5,9 +5,9 @@ export default function Footer() {
   const currentYear = new Date().getFullYear()
 
   return (
-    <footer className="border-t py-12 md:py-16">
+    <footer className="py-12 md:py-16">
       <div className="container px-4 md:px-6">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        {/* <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="space-y-4">
             <div className="flex items-center gap-2">
               <div className="flex items-center justify-center w-8 h-8 rounded-lg bg-primary text-primary-foreground">
@@ -101,8 +101,8 @@ export default function Footer() {
               </ul>
             </nav>
           </div>
-        </div>
-        <div className="mt-12 pt-8 border-t flex flex-col md:flex-row justify-between items-center gap-4">
+        </div> */}
+        <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-muted-foreground">© {currentYear} Stellaryx Labs. All rights reserved.</p>
           <div className="flex gap-4">
             <Link

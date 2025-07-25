@@ -62,10 +62,7 @@ export default function Home() {
                     Technical Rigor Meets Strategic Foresight
                   </h2>
                   <p className="text-muted-foreground md:text-xl">
-                    Stellaryx Labs is an experimental R&D initiative at the intersection of aerospace education, signals
-                    intelligence, and AI-driven geospatial analysis. Our mission is to democratize access to orbital
-                    intelligence by developing hands-on workshops, building tactical signal processing tools, and
-                    applying cutting-edge machine learning to satellite imagery and remote sensing data.
+                   Stellaryx Labs builds tools and training at the edge of aerospace, SIGINT, and AI, democratizing orbital intelligence through hands-on education and geospatial machine learning
                   </p>
                 </div>
                 <div className="space-y-4">
