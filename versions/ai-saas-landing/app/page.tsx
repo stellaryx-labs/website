@@ -179,7 +179,7 @@ export default function Home() {
                 </motion.div>
               </motion.div>
               <motion.div 
-                className="mx-auto aspect-video overflow-hidden rounded-xl object-cover sm:w-full lg:order-last lg:aspect-square"
+                className="flex items-center justify-center"
                 initial={{ opacity: 0, x: 50 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true, margin: "-100px" }}
@@ -187,10 +187,10 @@ export default function Home() {
               >
                 <img
                   alt="Orbital Intelligence Research"
-                  className="mx-auto aspect-video overflow-hidden rounded-xl object-cover sm:w-full lg:order-last lg:aspect-square"
-                  height="550"
-                  src="/placeholder.svg?height=550&width=550"
-                  width="550"
+                  className="rounded-full object-cover w-full max-w-md lg:max-w-lg"
+                  height="350"
+                  src="/globe.png?height=250&width=250"
+                  width="350"
                 />
               </motion.div>
             </div>
