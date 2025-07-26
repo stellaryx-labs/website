@@ -1,68 +1,61 @@
+"use client"
+
 import FeatureCard from "@/components/feature-card"
-import {
-  BotIcon,
-  SparklesIcon,
-  DatabaseIcon,
-  ShieldIcon,
-  FileTextIcon,
-  ServerIcon,
-  LockIcon,
-  ZapIcon,
-} from "@/components/feature-icons"
+import { Book, FlaskConical, Globe, Lock, Radar, Radio, Satellite, Shield } from "lucide-react"
 
 export default function FeaturesSection() {
   const features = [
     {
-      icon: <BotIcon />,
+      icon: <Globe />,
       title: "AI-Driven Geospatial Analysis",
       description:
         "Cutting-edge machine learning applications for satellite imagery and remote sensing data, enabling automated intelligence extraction from orbital assets.",
       accentColor: "rgba(36, 101, 237, 0.5)",
     },
     {
-      icon: <SparklesIcon />,
+      icon: <Radio />,
       title: "Signals Intelligence (SIGINT)",
       description:
         "Advanced signal processing capabilities for RF analysis, satellite communications interception, and tactical intelligence gathering from space-based platforms.",
       accentColor: "rgba(236, 72, 153, 0.5)",
     },
     {
-      icon: <DatabaseIcon />,
+      icon: <Satellite />,
       title: "Orbital Intelligence Platform",
       description:
         "Democratizing access to space-based intelligence through open-source tools and methodologies for satellite data analysis and orbital monitoring.",
       accentColor: "rgba(34, 211, 238, 0.5)",
     },
     {
-      icon: <ShieldIcon />,
+      icon: <Shield />,
       title: "Secure Space Architectures",
       description:
         "Developing autonomous, secure, space-based intelligence architectures that operate at the intersection of defense innovation and open-source development.",
       accentColor: "rgba(132, 204, 22, 0.5)",
     },
     {
-      icon: <FileTextIcon />,
+      icon: <Radar />,
       title: "Tactical Signal Processing",
       description:
         "Building specialized tools for RF demodulation, signal analysis, and tactical communications processing from raw satellite and terrestrial sources.",
       accentColor: "rgba(249, 115, 22, 0.5)",
     },
     {
-      icon: <ServerIcon />,
+      icon: <FlaskConical />,
       title: "Experimental R&D",
       description:
         "Pushing the boundaries of space systems engineering through experimental research and development in orbital mechanics and satellite technology.",
       accentColor: "rgba(168, 85, 247, 0.5)",
     },
     {
-      icon: <LockIcon />,
+      icon: <Lock />,
       title: "Defense Innovation",
       description:
         "Operating at the edge of open-source and defense innovation, bridging civilian research with strategic defense applications in space domain awareness.",
       accentColor: "rgba(251, 191, 36, 0.5)",
     },
     {
-      icon: <ZapIcon />,
+      icon: <Book />,
       title: "Hands-On Workshops",
       description:
         "Immersive educational experiences training the next generation of space systems engineers in practical orbital intelligence and RF analysis techniques.",

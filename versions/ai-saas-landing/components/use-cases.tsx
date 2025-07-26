@@ -3,54 +3,47 @@
 import { motion } from "framer-motion"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import FrostedGlassIcon from "@/components/frosted-glass-icon"
-import {
-  BuildingIcon,
-  GovernmentIcon,
-  FinanceIcon,
-  HealthcareIcon,
-  LegalIcon,
-  EducationIcon,
-} from "@/components/use-case-icons"
+import { FlaskConical, Globe, GraduationCap, Radio, Satellite, Shield } from "lucide-react"
 
 export default function UseCases() {
   const useCases = [
     {
-      icon: <BuildingIcon />,
+      icon: <Satellite />,
       title: "Space Systems Engineering",
       description:
         "Training the next generation of engineers in orbital mechanics, satellite design, and space-based intelligence systems through hands-on workshops and practical applications.",
       accentColor: "rgba(59, 130, 246, 0.5)",
     },
     {
-      icon: <GovernmentIcon />,
+      icon: <Shield />,
       title: "Defense & Intelligence",
       description:
         "Developing secure, autonomous space-based intelligence architectures for defense applications while maintaining open-source innovation principles.",
       accentColor: "rgba(139, 92, 246, 0.5)",
     },
     {
-      icon: <FinanceIcon />,
+      icon: <Globe />,
       title: "Satellite Data Analytics",
       description:
         "AI-driven analysis of satellite imagery and remote sensing data for commercial applications, environmental monitoring, and geospatial intelligence.",
       accentColor: "rgba(245, 158, 11, 0.5)",
     },
     {
-      icon: <HealthcareIcon />,
+      icon: <FlaskConical />,
       title: "Research Institutions",
       description:
         "Collaborative research in orbital intelligence, signal processing, and machine learning applications for academic and scientific communities.",
       accentColor: "rgba(239, 68, 68, 0.5)",
     },
     {
-      icon: <LegalIcon />,
+      icon: <Radio />,
       title: "RF Signal Analysis",
       description:
         "Advanced signal processing and demodulation techniques for tactical communications, satellite monitoring, and signals intelligence applications.",
       accentColor: "rgba(132, 204, 22, 0.5)",
     },
     {
-      icon: <EducationIcon />,
+      icon: <GraduationCap />,
       title: "Aerospace Education",
       description:
         "Democratizing access to orbital intelligence through educational programs that bridge theoretical knowledge with practical space systems engineering.",
