@@ -1,0 +1,2 @@
+- reduce the load time of the site
+- update the metadata of the site 
