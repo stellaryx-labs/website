@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="16" height="16" rx="3" fill="#1a1d21"/>
+  <circle cx="8" cy="8" r="4" fill="#3b82f6" opacity="0.8"/>
+  <circle cx="8" cy="8" r="2" fill="#60a5fa"/>
+  <circle cx="8" cy="8" r="1" fill="#ffffff"/>
+  <!-- Orbital rings -->
+  <circle cx="8" cy="8" r="6" stroke="#3b82f6" stroke-width="0.5" fill="none" opacity="0.3"/>
+  <circle cx="8" cy="8" r="5" stroke="#60a5fa" stroke-width="0.25" fill="none" opacity="0.5"/>
+</svg>
