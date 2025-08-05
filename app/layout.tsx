@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://stellaryxlabs.com",
-    title: "Stellaryx Labs | AI & Space Systems R&D",
+    title: "Stellaryx Labs",
     description: "Forging Intelligence Where Space Systems, Signals, and AI Collide",
     siteName: "Stellaryx Labs",
     images: [
@@ -70,7 +70,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Stellaryx Labs | AI & Space Systems R&D',
+    title: 'Stellaryx Labs',
     description: 'Forging Intelligence Where Space Systems, Signals, and AI Collide',
     images: ['/stellaryxlabslogo.png'],
   },
