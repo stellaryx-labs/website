@@ -11,6 +11,22 @@ export const metadata: Metadata = {
   description: "Forging Intelligence Where Space Systems, Signals, and AI Collide",
   keywords:
     "orbital intelligence, signals intelligence, SIGINT, geospatial AI, satellite imagery, RF signal processing, space systems engineering, aerospace education, defense innovation, machine learning, remote sensing",
+  viewport: {
+    width: 'device-width',
+    initialScale: 1,
+    maximumScale: 1,
+    userScalable: false,
+    // iOS Safari specific
+    viewportFit: 'cover',
+  },
+  // iOS Safari specific meta tags
+  other: {
+    'apple-mobile-web-app-capable': 'yes',
+    'apple-mobile-web-app-status-bar-style': 'black-translucent',
+    'apple-mobile-web-app-title': 'Stellaryx Labs',
+    'mobile-web-app-capable': 'yes',
+    'format-detection': 'telephone=no',
+  },
   icons: {
     icon: [
       {
@@ -70,9 +86,9 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={inter.className}>
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+    <html lang="en" suppressHydrationWarning className="dark overflow-x-hidden">
+      <body className={`${inter.className} overflow-x-hidden w-full bg-background text-foreground`}>
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false} disableTransitionOnChange>
           {children}
         </ThemeProvider>
       </body>

@@ -12,50 +12,80 @@ import FeaturesSection from "@/components/features-section"
 import StructuredData from "@/components/structured-data"
 import Link from "next/link"
 import { motion } from "framer-motion"
+import { useEffect, useState } from "react"
 
 export default function Home() {
-  // Animation variants for container
+  // Detect device capabilities instead of just iOS
+  const [isIOS, setIsIOS] = useState(false)
+  
+  useEffect(() => {
+    // Check for various factors that might need optimized animations
+    const iOS = /iPad|iPhone|iPod/.test(navigator.userAgent)
+    setIsIOS(iOS)
+  }, [])
+
+  // Animation variants that work well across all browsers
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.1,
-        delayChildren: 0.2,
+        staggerChildren: isIOS ? 0.2 : 0.1,
+        delayChildren: isIOS ? 0.3 : 0.2,
+        duration: isIOS ? 0.8 : 0.6,
       },
     },
   }
 
-  // Animation variants for individual items
+  // Ensure animations work on all browsers
   const itemVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0 },
+    hidden: { 
+      opacity: 0, 
+      y: isIOS ? 10 : 20
+    },
+    visible: { 
+      opacity: 1, 
+      y: 0,
+      transition: {
+        duration: isIOS ? 0.8 : 0.5,
+        ease: [0.25, 0.46, 0.45, 0.94] // Custom easing that works well across browsers
+      }
+    },
   }
 
   return (
     <>
       <StructuredData />
-      <div className="flex min-h-screen flex-col">
+      <div className="flex min-h-screen flex-col page-container main-container">
         <Navbar />
 
-        {/* Hero Section */}
-        <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+        {/* Hero Section - Cross-browser optimized */}
+        <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden section-container">
           <CssGridBackground />
           <FramerSpotlight />
-          <div className="container px-4 md:px-6 py-16 md:py-20">
-            <motion.div 
+          <div className="container-fix px-4 md:px-6 py-16 md:py-20">
+            <motion.div
               className="flex flex-col items-center text-center max-w-3xl mx-auto"
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: isIOS ? 15 : 30 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, ease: "easeOut" }}
+              transition={{ 
+                duration: isIOS ? 1.0 : 0.8, 
+                ease: [0.25, 0.46, 0.45, 0.94],
+                type: isIOS ? "spring" : "tween"
+              }}
             >
               {/* <div className="inline-block rounded-lg bg-muted px-3 py-1 text-sm mb-6">Enterprise AI Solution</div> */}
 
               <motion.div 
                 className="flex flex-col items-center justify-center gap-4 mb-6"
-                initial={{ opacity: 0, scale: 0.8 }}
+                initial={{ opacity: 0, scale: isIOS ? 0.9 : 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
+                transition={{ 
+                  duration: isIOS ? 0.8 : 0.6, 
+                  delay: 0.2, 
+                  ease: [0.25, 0.46, 0.45, 0.94],
+                  type: isIOS ? "spring" : "tween"
+                }}
               >
                 <img 
                   src="/stellaryxlabslogo_invert.png" 

@@ -1,35 +1,36 @@
 import { NextRequest, NextResponse } from 'next/server'
+import { Resend } from 'resend'
 
 export const runtime = 'edge';
+
+const resend = new Resend(process.env.RESEND_API_KEY)
 
 export async function POST(request: NextRequest) {
   try {
     const { to, subject, html } = await request.json()
 
-    // Here you would integrate with your preferred email service
-    // Examples: SendGrid, Resend, AWS SES, Nodemailer, etc.
-    
-    // For demonstration, we'll log the email data
-    console.log('Email to send:', {
-      to,
-      subject,
-      html
+    if (!process.env.RESEND_API_KEY) {
+      console.error('RESEND_API_KEY environment variable is not set')
+      return NextResponse.json(
+        { success: false, message: 'Email service not configured' },
+        { status: 500 }
+      )
+    }
+
+    // Send email using Resend
+    const emailResult = await resend.emails.send({
+      from: 'contact@stellaryxlabs.com', // This needs to be a verified domain in Resend
+      to: [to],
+      subject: subject,
+      html: html,
     })
 
-    // Example using a hypothetical email service:
-    /*
-    const emailResult = await emailService.send({
-      to,
-      subject,
-      html,
-      from: 'noreply@stellaryxlabs.com'
-    })
-    */
+    console.log('Email sent successfully:', emailResult)
 
-    // For now, we'll simulate a successful email send
     return NextResponse.json({ 
       success: true, 
-      message: 'Email sent successfully' 
+      message: 'Email sent successfully',
+      id: emailResult.data?.id 
     })
 
   } catch (error) {

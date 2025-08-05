@@ -48,7 +48,7 @@ export default function ContactForm() {
           <p><strong>Email:</strong> ${formData.email}</p>
           <p><strong>Organization:</strong> ${formData.organization}</p>
           <p><strong>Role:</strong> ${formData.role}</p>
-          <p><strong>Research Interest Area:</strong> ${formData.interest}</p>
+          <p><strong>Interest Area:</strong> ${formData.interest}</p>
           <p><strong>Message:</strong></p>
           <p>${formData.message}</p>
           <hr>
@@ -161,7 +161,7 @@ export default function ContactForm() {
             />
           </div>
           <div className="space-y-2">
-            <Label htmlFor="interest">Research Interest Area</Label>
+            <Label htmlFor="interest">Interest Area</Label>
             <Select onValueChange={(value) => handleSelectChange('interest', value)}>
               <SelectTrigger id="interest">
                 <SelectValue placeholder="Select your primary interest" />
@@ -179,11 +179,11 @@ export default function ContactForm() {
             </Select>
           </div>
           <div className="space-y-2">
-            <Label htmlFor="message">Research Interests & Collaboration Goals</Label>
+            <Label htmlFor="message">Message</Label>
             <Textarea
               id="message"
               name="message"
-              placeholder="Tell us about your research interests, potential collaboration goals, or specific areas where you'd like to work with our R&D team..."
+              placeholder="Tell us about your research interests, potential collaboration goals, or specific areas where you'd like to work with our team..."
               rows={4}
               value={formData.message}
               onChange={handleInputChange}
