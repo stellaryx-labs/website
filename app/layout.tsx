@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://stellaryxlabs.com",
     title: "Stellaryx Labs",
-    description: "Forging Intelligence Where Space Systems, Signals, and AI Collide",
+    description: "Forging AI-driven software, training, and tactical systems at the edge of space, security, and electromagnetic warfare",
     siteName: "Stellaryx Labs",
     images: [
       {
@@ -71,7 +71,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Stellaryx Labs',
-    description: 'Forging Intelligence Where Space Systems, Signals, and AI Collide',
+    description: 'Forging AI-driven software, training, and tactical systems at the edge of space, security, and electromagnetic warfare',
     images: ['/stellaryxlabslogo.png'],
   },
   robots: {
