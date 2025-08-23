@@ -1,11 +1,13 @@
-export default function CssGridBackground() {
+export default function CssGridBackground({
+    include_bg = true,
+  }) {
   return (
     <>
       {/* Tactical World Map SVG Background */}
       <div
         className="absolute inset-0 pointer-events-none z-[-3] opacity-30 dark:opacity-20"
         style={{
-          backgroundImage: `url("https://images.unsplash.com/photo-1451187580459-43490279c0fa?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d29ybGR8ZW58MHx8MHx8fDA%3D")`,
+          backgroundImage: include_bg ? `url("https://images.unsplash.com/photo-1451187580459-43490279c0fa?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8d29ybGR8ZW58MHx8MHx8fDA%3D")`: 'none',
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
@@ -41,6 +43,7 @@ export default function CssGridBackground() {
       />
 
       {/* Subtle gradient overlay for depth */}
+
       <div
         className="absolute inset-0 pointer-events-none z-[-2] grid-gradient"
         style={{
