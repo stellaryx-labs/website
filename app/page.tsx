@@ -2,7 +2,8 @@
 
 import { Button } from "@/components/ui/button"
 import { Satellite, Radio, Brain, Radar, Zap, Telescope } from "lucide-react"
-import ContactForm from "@/components/contact-form"
+// import ContactForm from "@/components/contact-form"
+import TypeformEmbed from "@/components/typeform-component"
 import UseCases from "@/components/use-cases"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
@@ -265,7 +266,7 @@ export default function Home() {
  
               </div>
               <div className="lg:ml-10">
-                <ContactForm />
+                <TypeformEmbed />
               </div>
             </div>
           </div>

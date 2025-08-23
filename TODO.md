@@ -1,2 +1,3 @@
-- reduce the load time of the site
-- update the metadata of the site 
+- finish adding resend 
+- show all projects in an elaborate manner 
+- 

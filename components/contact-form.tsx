@@ -101,63 +101,65 @@ export default function ContactForm() {
         <CardTitle>Contact Form</CardTitle>
       </CardHeader>
       <CardContent>
+      <div data-tf-live="01K3B0RWQEJNE139V3F61D1YJV"></div><script src="//embed.typeform.com/next/embed.js"></script>
+      {/*
         <form onSubmit={handleSubmit} className="space-y-4">
           <div className="grid grid-cols-2 gap-4">
             <div className="space-y-2">
               <Label htmlFor="firstName">First Name</Label>
-              <Input 
-                id="firstName" 
+              <Input
+                id="firstName"
                 name="firstName"
-                placeholder="John" 
+                placeholder="John"
                 value={formData.firstName}
                 onChange={handleInputChange}
-                required 
+                required
               />
             </div>
             <div className="space-y-2">
               <Label htmlFor="lastName">Last Name</Label>
-              <Input 
-                id="lastName" 
+              <Input
+                id="lastName"
                 name="lastName"
-                placeholder="Doe" 
+                placeholder="Doe"
                 value={formData.lastName}
                 onChange={handleInputChange}
-                required 
+                required
               />
             </div>
           </div>
           <div className="space-y-2">
             <Label htmlFor="email">Email</Label>
-            <Input 
-              id="email" 
+            <Input
+              id="email"
               name="email"
-              type="email" 
-              placeholder="john.doe@research.org" 
+              type="email"
+              placeholder="john.doe@research.org"
               value={formData.email}
               onChange={handleInputChange}
-              required 
+              required
             />
           </div>
           <div className="space-y-2">
             <Label htmlFor="organization">Organization / Institution</Label>
-            <Input 
-              id="organization" 
+            <Input
+              id="organization"
               name="organization"
-              placeholder="Company, University, etc." 
+              placeholder="Company, University, etc."
               value={formData.organization}
               onChange={handleInputChange}
-              required 
+              required
             />
           </div>
           <div className="space-y-2">
             <Label htmlFor="role">Your Role</Label>
-            <Input 
-              id="role" 
+            <Input
+              id="role"
               name="role"
-              placeholder="Researcher, Engineer, Professor, etc." 
+              placeholder="Researcher, Engineer, Professor, etc."
               value={formData.role}
               onChange={handleInputChange}
-              required 
+              required
             />
           </div>
           <div className="space-y-2">
@@ -168,7 +170,7 @@ export default function ContactForm() {
               </SelectTrigger>
               <SelectContent>
                 <SelectItem value="orbital-intelligence">Orbital Intelligence</SelectItem>
-                <SelectItem value="signals-intelligence">Signals Intelligence (SIGINT)</SelectItem>
+                <SelectItem value="signals-intelligence">Signals Intelligence</SelectItem>
                 <SelectItem value="geospatial-ai">AI-Driven Geospatial Analysis</SelectItem>
                 <SelectItem value="rf-processing">RF Signal Processing</SelectItem>
                 <SelectItem value="space-systems">Space Systems Engineering</SelectItem>
@@ -193,6 +195,7 @@ export default function ContactForm() {
             {isSubmitting ? "Submitting..." : "Submit Form"}
           </Button>
         </form>
+        */}
       </CardContent>
     </Card>
   )
